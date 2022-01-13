@@ -64,10 +64,12 @@ class MixerBlock(nn.Module):
                 self.token_mixing.Dense[0].bias.copy_(token_mixing_0_bias)
                 self.token_mixing.Dense[2].weight.copy_(token_mixing_1_scale)
                 self.token_mixing.Dense[2].bias.copy_(token_mixing_1_bias)
-            self.channel_mixing.Dense[0].weight.copy_(channel_mixing_0_scale)
-            self.channel_mixing.Dense[0].bias.copy_(channel_mixing_0_bias)
-            self.channel_mixing.Dense[2].weight.copy_(channel_mixing_1_scale)
-            self.channel_mixing.Dense[2].bias.copy_(channel_mixing_1_bias)
+            
+            if self.channel_mixing.Dense[0].weight.shape == channel_mixing_0_scale.shape:
+                self.channel_mixing.Dense[0].weight.copy_(channel_mixing_0_scale)
+                self.channel_mixing.Dense[0].bias.copy_(channel_mixing_0_bias)
+                self.channel_mixing.Dense[2].weight.copy_(channel_mixing_1_scale)
+                self.channel_mixing.Dense[2].bias.copy_(channel_mixing_1_bias)
 
 
 class MlpMixer(nn.Module):
