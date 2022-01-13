@@ -8,13 +8,13 @@ from mlp_mixer import MlpMixer
 pretrain_model='./pretrain_models/imagenet21k_Mixer-B_16.npz'
 
 model = MlpMixer(num_classes=10, 
-        num_blocks=4, 
-        patch_size=16, 
-        hidden_dim=768, 
-        tokens_mlp_dim=384, 
-        channels_mlp_dim=3072, 
-        image_size=224
-        )
+                 num_blocks=4, 
+                 patch_size=16, 
+                 hidden_dim=768, 
+                 tokens_mlp_dim=384, 
+                 channels_mlp_dim=3072, 
+                 image_size=224
+                 )
 
 # load official ImageNet pre-trained model:
 model.load_from(np.load(pretrain_model))
@@ -22,6 +22,8 @@ print ('Finish loading the pre-trained model!')
 
 num_param = sum(p.numel() for p in model.parameters()) / 1e6
 print('Total params.: %f M'%num_param)
+
+pred = model(img)
 ```
 
 # Fine-tuning
