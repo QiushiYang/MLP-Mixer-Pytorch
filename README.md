@@ -21,7 +21,7 @@ model.load_from(np.load(pretrain_model))
 print ('Finish loading the pre-trained model!')
 
 num_param = sum(p.numel() for p in model.parameters()) / 1e6
-print('Total params.: %f M'%num_param)
+print ('Total params.: %f M'%num_param)
 
 pred = model(img)
 ```
