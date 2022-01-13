@@ -8,7 +8,7 @@ from mlp_mixer import MlpMixer
 pretrain_model='./pretrain_models/imagenet21k_Mixer-B_16.npz'
 
 model = MlpMixer(num_classes=10, 
-                 num_blocks=4, 
+                 num_blocks=12, 
                  patch_size=16, 
                  hidden_dim=768, 
                  tokens_mlp_dim=384, 
