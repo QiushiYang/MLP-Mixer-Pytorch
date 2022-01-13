@@ -3,7 +3,7 @@ Unofficial PyTorch implementation of MLP-Mixer with the function of loading offi
 
 # Usage
 ```python
-from models.mlp_mixer import MlpMixer
+from mlp_mixer import MlpMixer
 
 pretrain_model='./pretrain_models/imagenet21k_Mixer-B_16.npz'
 
