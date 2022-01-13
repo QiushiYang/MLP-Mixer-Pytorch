@@ -41,7 +41,7 @@ optim = torch.optim.SGD(param_list,
                         )
 lr_schdlr = WarmupCosineLrScheduler(optim, 
                                     n_iters_all, 
-                                    warmup_iter=int(n_iters_all*0.1)
+                                    warmup_iter=0
                                     )
 ```
 Using the pre-trained model to fine-tune MLP-Mixer can obtain remarkable improvements (e.g., +10% accuracy on a small dataset).
