@@ -42,9 +42,9 @@ lr_schdlr = WarmupCosineLrScheduler(optim,
                                     warmup_iter=int(n_iters_all*0.1)
                                     )
 ```
-Using pre-trained model to fine-tune MLP-Mixer can obtain remarkable improvements (e.g., +10% accuracy on a small dataset).
+Using the pre-trained model to fine-tune MLP-Mixer can obtain remarkable improvements (e.g., +10% accuracy on a small dataset).
 
-We can change the patch_size (e.g., patch_size=8) for inputs with different resolutions, but smaller patch_size may not always bring performance improvements.
+Note that we can also change the patch_size (e.g., patch_size=8) for inputs with different resolutions, but smaller patch_size may not always bring performance improvements.
 
 
 # Citation
