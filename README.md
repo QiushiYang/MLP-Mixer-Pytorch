@@ -1,5 +1,5 @@
 # MLP-Mixer-Pytorch
-Unofficial PyTorch implementation of [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/abs/2105.01601) with the function of loading official ImageNet pre-trained parameters.
+PyTorch implementation of [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/abs/2105.01601) with the function of loading official ImageNet pre-trained parameters.
 
 # Usage
 ```python
