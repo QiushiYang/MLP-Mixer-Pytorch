@@ -3,8 +3,8 @@ PyTorch implementation of [MLP-Mixer: An all-MLP Architecture for Vision](https:
 
 # Usage
 ```python
-import numpy as np
 import torch
+import numpy as np
 from mlp_mixer import MlpMixer
 
 pretrain_model='./pretrain_models/imagenet21k_Mixer-B_16.npz'
