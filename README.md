@@ -1,5 +1,5 @@
 # MLP-Mixer-Pytorch
-Unofficial PyTorch implementation of MLP-Mixer with the function of loading official ImageNet pre-trained parameters.
+Unofficial PyTorch implementation of [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/abs/2105.01601) with the function of loading official ImageNet pre-trained parameters.
 
 # Usage
 ```python
@@ -60,6 +60,6 @@ Note that we can also change the patch_size (e.g., patch_size=8) for inputs with
 ```
 
 # Acknowledgement
-1. The implementation is based on the original paper <https://arxiv.org/abs/2105.01601> and the official Tensorflow repo: <https://github.com/google-research/vision_transformer>.
+1. The implementation is based on the original paper and the official Tensorflow repo: <https://github.com/google-research/vision_transformer>.
 2. It also refers to the re-implementation repo: <https://github.com/d-li14/mlp-mixer.pytorch>.
 
