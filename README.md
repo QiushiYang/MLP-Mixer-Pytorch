@@ -34,8 +34,8 @@ Download the official pre-trained models at <https://console.cloud.google.com/st
 Hypyer-parameters setting for better fine-tuning:
 ```python
 optim = torch.optim.SGD(param_list, 
-                        lr=1e-3, 
-                        weight_decay=0.0,
+                        lr=5e-4, 
+                        weight_decay=1e-7,
                         momentum=0.9, 
                         nesterov=True
                         )
